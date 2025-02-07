@@ -17,9 +17,7 @@ L’utilisation de **JDK 17** est requise. Vous pouvez le télécharger ici :
 
 ## 🗄️ Base de données PostgreSQL  
 La formation utilise une **vraie base de données PostgreSQL** pour mieux visualiser la structure des données.  
-
-### 🆘 Bas Postgres Portable 
-Si la plateforme SSP est **indisponible**, une solution alternative consiste à utiliser **Postgres Portable** en local.  
+Une solution  consiste à utiliser **Postgres Portable** en local :  
 📖 Instructions détaillées ici :  
 🔗 [Installation d’une base Postgres locale](https://gitlab.insee.fr/formations-informatiques/cursus-nouveaux-arrivants-sndin/formation-hibernate-basique/-/wikis/Installation-d'une-base-Postgres-locale)  
 
