@@ -6,17 +6,10 @@
 Il est **fortement conseillé** de créer un **workspace spécifique** pour la formation afin d’éviter toute perturbation de vos dossiers de travail courants.  
 
 ## 📌 Versions du projet  
-Le projet est disponible en **deux versions** :  
 
-1. **Version récente** (🔹 Recommandée)  
+ **Version récente** (🔹 Recommandée)  
    - Basée sur **Spring Boot 3**  
    - Configuration via **annotations**  
-
-2. **Version ancienne**  
-   - Sans Spring Boot  
-   - Configuration Spring via **fichiers XML**  
-
-La **version récente** est **préconisée** pour suivre la formation dans les meilleures conditions.  
 
 ## ☕ Installation du JDK 17  
 L’utilisation de **JDK 17** est requise. Vous pouvez le télécharger ici :  
@@ -25,12 +18,7 @@ L’utilisation de **JDK 17** est requise. Vous pouvez le télécharger ici :
 ## 🗄️ Base de données PostgreSQL  
 La formation utilise une **vraie base de données PostgreSQL** pour mieux visualiser la structure des données.  
 
-### ⚡ Mise en place avec **SSP Lab** (recommandé)  
-Une base PostgreSQL peut être mise en place via **les services du SSP Lab**.  
-📖 Suivez les instructions ici :  
-🔗 [Création d'une BDD PostgreSQL via SSP Lab](https://gitlab.insee.fr/formations-informatiques/cursus-nouveaux-arrivants-sndin/formation-hibernate-avancee/-/wikis/Proc%C3%A9dure-pour-la-cr%C3%A9ation-d%E2%80%99une-BDD-PostgreSQL-via-le-SSP-Lab)  
-
-### 🆘 En cas de problème avec SSP Lab  
+### 🆘 Bas Postgres Portable 
 Si la plateforme SSP est **indisponible**, une solution alternative consiste à utiliser **Postgres Portable** en local.  
 📖 Instructions détaillées ici :  
 🔗 [Installation d’une base Postgres locale](https://gitlab.insee.fr/formations-informatiques/cursus-nouveaux-arrivants-sndin/formation-hibernate-basique/-/wikis/Installation-d'une-base-Postgres-locale)  
