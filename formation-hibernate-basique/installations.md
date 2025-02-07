@@ -19,7 +19,7 @@ L’utilisation de **JDK 17** est requise. Vous pouvez le télécharger ici :
 La formation utilise une **vraie base de données PostgreSQL** pour mieux visualiser la structure des données.  
 Une solution  consiste à utiliser **Postgres Portable** en local :  
 📖 Instructions détaillées ici :  
-🔗 [Installation d’une base Postgres locale](https://gitlab.insee.fr/formations-informatiques/cursus-nouveaux-arrivants-sndin/formation-hibernate-basique/-/wikis/Installation-d'une-base-Postgres-locale)  
+🔗 [Installation d’une base Postgres locale](https://github.com/PhilippeTheRed/formation/blob/main/formation-hibernate-basique/installation%20postgres%20portable.md)  
 
 ## 🏗️ Installation du plugin **M2E** (Maven pour Eclipse)  
 Pour la **dernière partie de la formation** (utilisation de **Criteria**), le **plugin M2E pour Eclipse** est nécessaire.  
