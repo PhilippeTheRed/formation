@@ -10,6 +10,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.lang.NonNull;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.TransactionCallback;
 import org.springframework.transaction.support.TransactionTemplate;
@@ -23,11 +24,12 @@ import net.ttddyy.dsproxy.QueryCountHolder;
 
 /**
  * Classe de test pour le TP7 JPQL
+ * 
  * @author carlitto
  *
  */
 @SpringBootTest(properties = { "activate.datasource-proxy=true" })
-public class SecteurServicesPerformancesTestJPQL extends AbstractTest{
+public class SecteurServicesPerformancesTestJPQL extends AbstractTest {
 
 	@Autowired
 	private JeuxTestUtil jeuxTestUtil;
@@ -62,14 +64,16 @@ public class SecteurServicesPerformancesTestJPQL extends AbstractTest{
 
 		transactionTemplate.execute(new TransactionCallback<Object>() {
 
-			public Object doInTransaction(TransactionStatus arg0) {
+			public Object doInTransaction(@NonNull TransactionStatus arg0) {
 
 				Secteur secteur = secteurDAO.findByCodeNaf("1104Z");
 
-				assertEquals(new Double(468), secteur.getIndicesAnnuels().get(Year.parse("2016")).getValeur(), "L'indice annuel de 2016 doit valoir 1170");
+				assertEquals(Double.valueOf(468), secteur.getIndicesAnnuels().get(Year.parse("2016")).getValeur(),
+						"L'indice annuel de 2016 doit valoir 1170");
 
-				assertEquals(new Double(72),
-		                secteur.getIndicesMensuels().get(YearMonth.of(2016, Month.DECEMBER)).getValeur(), "L'indice mensuel de décembre 2016 doit valoir 180");
+				assertEquals(Double.valueOf(72),
+						secteur.getIndicesMensuels().get(YearMonth.of(2016, Month.DECEMBER)).getValeur(),
+						"L'indice mensuel de décembre 2016 doit valoir 180");
 
 				return null;
 			}

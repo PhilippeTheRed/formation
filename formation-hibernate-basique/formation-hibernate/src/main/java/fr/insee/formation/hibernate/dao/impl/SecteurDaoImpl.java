@@ -3,7 +3,6 @@ package fr.insee.formation.hibernate.dao.impl;
 import org.springframework.stereotype.Repository;
 
 import fr.insee.formation.hibernate.dao.SecteurDAO;
-import fr.insee.formation.hibernate.model.Declaration;
 import fr.insee.formation.hibernate.model.Entreprise;
 import fr.insee.formation.hibernate.model.Entreprise_;
 import fr.insee.formation.hibernate.model.Secteur;
@@ -70,7 +69,7 @@ public class SecteurDaoImpl implements SecteurDAO {
 		
 		Fetch<Secteur, Entreprise> fetchEntreprise = root.fetch(Secteur_.entreprises, JoinType.INNER);
 		
-		Fetch<Entreprise, Declaration> fetchDeclarations = fetchEntreprise.fetch(Entreprise_.declarations, JoinType.INNER);
+		fetchEntreprise.fetch(Entreprise_.declarations, JoinType.INNER);
 		
 		return entityManager.createQuery(criteria).getSingleResult();
 	}

@@ -1,10 +1,7 @@
 package fr.insee.formation.hibernate.model.converter;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.YearMonth;
-import java.time.ZoneId;
-import java.util.Date;
 
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;

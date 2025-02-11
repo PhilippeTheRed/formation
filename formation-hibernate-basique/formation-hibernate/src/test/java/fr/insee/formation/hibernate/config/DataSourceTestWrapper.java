@@ -10,6 +10,7 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Profile;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 
 import com.p6spy.engine.spy.P6DataSource;
@@ -39,7 +40,7 @@ public class DataSourceTestWrapper implements BeanPostProcessor {
 	Logger log = LoggerFactory.getLogger(DataSourceTestWrapper.class);
 
 	@Override
-	public Object postProcessBeforeInitialization(Object bean, String beanName) {
+	public Object postProcessBeforeInitialization(@NonNull Object bean, @NonNull String beanName) {
 		if (bean instanceof DataSource) {
 
 			DataSource dataSource = (DataSource) bean;
@@ -74,7 +75,7 @@ public class DataSourceTestWrapper implements BeanPostProcessor {
 	}
 
 	@Override
-	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+	public Object postProcessAfterInitialization(@NonNull Object bean, @NonNull String beanName) throws BeansException {
 		return bean;
 	}
 

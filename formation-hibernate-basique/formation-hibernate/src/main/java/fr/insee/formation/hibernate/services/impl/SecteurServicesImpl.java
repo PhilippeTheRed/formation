@@ -4,7 +4,6 @@ import java.time.Year;
 import java.time.YearMonth;
 import java.time.ZoneId;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import fr.insee.formation.hibernate.dao.SecteurDAO;
