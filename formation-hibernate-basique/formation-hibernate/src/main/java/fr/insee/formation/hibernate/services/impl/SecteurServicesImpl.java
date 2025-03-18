@@ -1,4 +1,4 @@
-﻿package fr.insee.formation.hibernate.services.impl;
+package fr.insee.formation.hibernate.services.impl;
 
 import java.time.Year;
 import java.time.YearMonth;
